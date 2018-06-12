@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="149dp"
+        android:id="@+id/firstblock"
+        android:layout_weight="0.00"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:text="您最近的一次活動是13:18~13:30在圖書館"
+            android:layout_width="match_parent"
+            android:id="@+id/recentworktext"
+            android:layout_height="73dp"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.48" />
+
+            <Button
+                android:text="點此編輯活動"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edituractivity"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/secondblock"
+        android:weightSum="1"
+        android:gravity="center_vertical"
+        android:layout_weight="0.40">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/calories"
+            android:layout_weight="0.27"
+            android:layout_marginLeft="16dp"
+            android:text="0卡" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/distance"
+            android:layout_weight="0.27"
+            android:text="0m"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stepcount"
+            android:layout_weight="0.27"
+            android:layout_marginRight="16dp"
+            android:text="0步" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:layout_weight="0.02"
+        android:id="@+id/thirdblock"
+        android:gravity="center">
+
+
+        <Button
+            android:text="移動"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:id="@+id/move" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:layout_weight="0.08"
+        android:id="@+id/fourthblock"
+        android:gravity="center">
+
+
+        <Button
+            android:text="定點"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:id="@+id/site" />
+    </LinearLayout>
+
+</LinearLayout>
